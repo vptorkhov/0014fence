@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Калькулятор</title>
+    <meta name="description" content="о чем страница">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
+    <!-- Custom Browsers Color-->
+    <meta name="theme-color" content="#3361d8">
+    <link rel="stylesheet" href="libs/magnificPopup/magnific-popup.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="trop main-mnu hidden-mnu hidden-lg landingMenu2 d-lg-none"><a class="toggle-mnu toggle-mnu-1" href="#"><span></span></a>
+        <div class="wrapp-hidden"> 
+          <ul class="menu">
+            <li class="menu-item menu-item-has-children"><a href="#">О нас</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Строительство загородных домов</a></li>
+                <li class="menu-item"><a href="#">Отделка загородных домов</a></li>
+                <li class="menu-item"><a href="#">Покраска деревянных домов</a></li>
+                <li class="menu-item"><a href="#">Штукатурные фасады загородных домов</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#">Наши работы</a></li>
+            <li class="menu-item"><a href="#">Цены</a></li>
+            <li class="menu-item"><a href="#">Калькулятор</a></li>
+            <li class="menu-item"><a href="#">Акции</a></li>
+            <li class="menu-item"><a href="#">Заказать</a></li>
+          </ul>
+          <div class="top-line">
+            <div class="mb-3"> <a class="top-line__tel text-white" href="tel:8(499)955-55-03">8(499)955-55-03</a>
+            </div>
+            <div class="mb-3"><a class="top-line__link text-white" href="mailto:dostup-zabor@yandex.ru">
+              <svg class="icon icon-envelope ">
+                <use xlink:href="img/svg/sprite.svg#envelope"></use>
+              </svg>dostup-zabor@yandex.ru</a>
+            </div>
+            <div class="mb-3">
+              <div class="top-line__link text-white">
+                <svg class="icon icon-clock ">
+                  <use xlink:href="img/svg/sprite.svg#clock"></use>
+                </svg>ежедневно с 09.00 до 21.00
+              </div>
+            </div><a class="top-line__btn mb-3" href="#">
+            <svg class="icon icon-calculator ">
+              <use xlink:href="img/svg/sprite.svg#calculator"></use>
+            </svg>Забор из профнастила</a><a class="top-line__btn mb-3" href="#">
+            <svg class="icon icon-calculator ">
+              <use xlink:href="img/svg/sprite.svg#calculator"></use>
+            </svg>Забор из евроштакетника</a><a class="top-line__btn mb-3" href="#">
+            <svg class="icon icon-calculator ">
+              <use xlink:href="img/svg/sprite.svg#calculator"></use>
+            </svg>Забор из сетки рабицы</a>
+          </div>
+        </div>
+      </div>
+      <!--  мобильное меню                                     -->
+      <header class="header header header--page">
+        <!-- start .top_line-->
+        <div class="top-line">
+          <div class="container">
+            <div class="row">
+              <div class="top-line__logo-block col-sm-auto col d-none d-sm-block"><a class="logo" href="/"><img src="img/logo.png" alt=""/><span class="logo__text">Доступные<span class="accent">  заборы </span></span></a>
+              </div>
+              <div class="top-line__tel-block col">
+                <div class="row">
+                  <div class="col-lg d-none d-md-block">
+                    <div class="row">
+                      <div class="top-line__col col-auto"> <a class="top-line__link" href="mailto:dostup-zabor@yandex.ru">
+                        <svg class="icon icon-envelope ">
+                          <use xlink:href="img/svg/sprite.svg#envelope"></use>
+                        </svg>dostup-zabor@yandex.ru</a>
+                      </div>
+                      <div class="top-line__col col-xl-auto col">
+                        <div class="top-line__link">
+                          <svg class="icon icon-clock ">
+                            <use xlink:href="img/svg/sprite.svg#clock"></use>
+                          </svg>ежедневно с 09.00 до 21.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="top-line__col col-md-auto col-sm text-sm-right"><a class="top-line__tel text-primary" href="tel:8(499)955-55-03">8(499)955-55-03</a>
+                  </div>
+                  <div class="top-line__col col-md-auto text-sm-right"><a class="top-line__link-modal popup-with-move-anim text-body" href="#modal-call">Заказать звонок</a>
+                  </div>
+                </div>
+                <div class="row d-none d-lg-flex">
+                  <div class="col-4"><a class="top-line__btn" href="#">
+                    <svg class="icon icon-calculator ">
+                      <use xlink:href="img/svg/sprite.svg#calculator"></use>
+                    </svg>Забор из профнастила</a>
+                  </div>
+                  <div class="col-4"><a class="top-line__btn" href="#">
+                    <svg class="icon icon-calculator ">
+                      <use xlink:href="img/svg/sprite.svg#calculator"></use>
+                    </svg>Забор из евроштакетника</a>
+                  </div>
+                  <div class="col-4"><a class="top-line__btn" href="#">
+                    <svg class="icon icon-calculator ">
+                      <use xlink:href="img/svg/sprite.svg#calculator"></use>
+                    </svg>Забор из сетки рабицы</a>
+                  </div>
+                </div>
+              </div>
+              <div class="top-line__col col-auto d-lg-none"><a class="toggle-mnu toggle-mnu-1 d-lg-none" href="#"><small>МЕНЮ</small><span></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end .top_line-->
+        <!-- start top-nav-->
+        <div class="top-nav d-none d-lg-block">
+          <div class="container">
+            <ul class="menu">
+              <li class="menu-item menu-item-has-children"><a href="#">О нас</a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Строительство загородных домов</a></li>
+                  <li class="menu-item"><a href="#">Отделка загородных домов</a></li>
+                  <li class="menu-item"><a href="#">Покраска деревянных домов</a></li>
+                  <li class="menu-item"><a href="#">Штукатурные фасады загородных домов</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="#">Наши работы</a></li>
+              <li class="menu-item"><a href="#">Цены</a></li>
+              <li class="menu-item"><a href="#">Калькулятор</a></li>
+              <li class="menu-item"><a href="#">Акции</a></li>
+              <li class="menu-item"><a href="#">Заказать</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end top-nav-->
+      </header>
+      <div class="header-block pb-0">
+        <div class="container">
+          <nav class="breadcrumb"><a class="breadcrumb-item" href="#">Главная</a><a class="breadcrumb-item" href="#">Наши работы</a><span class="breadcrumb-item active">Договор</span>
+          </nav>
+        </div>
+      </div>
+      <!-- start s-calc-->
+      <div class="s-calc section" id="s-calc">
+        <div class="container">
+          <div class="section-title">
+            <div class="text-center">
+              <h1>Калькулятор забора из профнастила</h1>
+            </div>
+            <p>Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами. Вам достаточно приехать в офис или вызвать замерщика на участок и выбрать материал, высоту, цвет и другие параметры ограждения. Специалисты компании подберут и подготовят материалы, собственная монтажная бригада соберет и установит забор. Оплату Вы вносите только после проверки качества работы.Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами. Вам достаточно приехать в офис или вызвать замерщика на участок и выбрать материал, высоту, цвет и другие параметры ограждения. Специалисты компании подберут и подготовят материалы, собственная монтажная бригада соберет и установит забор. Оплату Вы вносите только после проверки качества работы.</p>
+          </div>
+          <div class="row">
+            <div class="s-calc__col col-lg-8 col-xl-9 col-md-7">
+              <div class="form-wrap p-0">
+                <div class="form-wrap__input-wrap form-group">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4"><span class="form-wrap__title justify-content-lg-end align-items-center small d-flex flex-wrap mb-1">Введите длину забора</span>
+                    </div>
+                    <div class="col"><input class="form-wrap__input form-control" type="text" placeholder="1 м"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- +e.input-wrap-->
+                <div class="form-wrap__input-wrap form-group">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4"><span class="form-wrap__title justify-content-lg-end align-items-center small d-flex flex-wrap mb-1">Выберите высоту забора</span>
+                    </div>
+                    <div class="col">
+                      <select class="form-wrap__input form-control">
+                        <option class="d-none" value="" disabled="disabled" selected="selected"> 1м</option>
+                        <option value=""> 1мx</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- +e.input-wrap-->
+                <div class="form-wrap__input-wrap form-group">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4"><span class="form-wrap__title justify-content-lg-end align-items-center small d-flex flex-wrap mb-1">Выберите тип покрытия<a class="btn-qu popup-with-move-anim" href="#modal-info">?</a></span>
+                    </div>
+                    <div class="col">
+                      <select class="form-wrap__input form-control">
+                        <option class="d-none" value="" disabled="disabled" selected="selected">Односторонее</option>
+                        <option value="">Односторонееx</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- +e.input-wrap-->
+                <div class="form-wrap__input-wrap form-group">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4"><span class="form-wrap__title justify-content-lg-end align-items-center small d-flex flex-wrap mb-1">Выберите количество ворот</span>
+                    </div>
+                    <div class="col">
+                      <select class="form-wrap__input form-control">
+                        <option class="d-none" value="" disabled="disabled" selected="selected">1 шт</option>
+                        <option value="">1 штx</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- +e.input-wrap-->
+                <div class="form-wrap__input-wrap form-group">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4"><span class="form-wrap__title justify-content-lg-end align-items-center small d-flex flex-wrap mb-1">Выберите ширину ворот, м </span>
+                    </div>
+                    <div class="col">
+                      <select class="form-wrap__input form-control">
+                        <option class="d-none" value="" disabled="disabled" selected="selected"> 2м</option>
+                        <option value=""> 2мx</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- +e.input-wrap-->
+                <div class="form-wrap__input-wrap form-group">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4"><span class="form-wrap__title justify-content-lg-end align-items-center small d-flex flex-wrap mb-1">Выберите количество калиток</span>
+                    </div>
+                    <div class="col">
+                      <select class="form-wrap__input form-control">
+                        <option class="d-none" value="" disabled="disabled" selected="selected"> 2м</option>
+                        <option value=""> 2мx</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- +e.input-wrap-->
+                <div class="form-wrap__input-wrap form-group">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4"><span class="form-wrap__title justify-content-lg-end align-items-center small d-flex flex-wrap mb-1">Шоссе</span>
+                    </div>
+                    <div class="col">
+                      <select class="form-wrap__input form-control">
+                        <option class="d-none" value="" disabled="disabled" selected="selected"> Шоссе</option>
+                        <option value=""> Шоссеx</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- +e.input-wrap-->
+                <div class="form-wrap__input-wrap form-group">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4"><span class="form-wrap__title justify-content-lg-end align-items-center small d-flex flex-wrap mb-1">Расстояние от МКАД, км</span>
+                    </div>
+                    <div class="col"><input class="form-wrap__input form-control" type="text" placeholder="100"/>
+                    </div>
+                  </div>
+                </div>
+                <!-- +e.input-wrap-->
+              </div>
+            </div>
+            <div class="col-lg-8 col-xl-9 col-md-7 order-md-last">
+              <div class="row">
+                <div class="offset-md-7 col-md-5 offset-lg-8 col-lg-4 mb-4">
+                  <button class="s-calc__btn btn btn-accent btn-block">Рассчитать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="s-calc__col col-lg-4 col-xl-3 col-md-5">
+              <div class="s-calc__item justify-content-between">
+                <div class="s-calc__img-wrap text-center d-none d-md-block"><img class="res-i" src="img/calc-1.png" alt=""/>
+                </div>
+                <div class="s-calc__text-block">
+                  <div class="s-calc__group">
+                    <div class="small text-gr">Стоимость забора</div>
+                    <div class="h4">0 руб.</div>
+                  </div>
+                  <div class="s-calc__group">
+                    <div class="small text-gr">Стоимость забора</div>
+                    <div class="h4">0 руб.</div>
+                  </div>
+                  <div class="s-calc__group">
+                    <div class="small text-gr">Стоимость забора</div>
+                    <div class="h4 text-primary strong">0 руб.</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col-lg-4-->
+            </div>
+          </div>
+          <table class="calc-table table">
+            <thead>
+              <tr>
+                <td>Работы и материалы</td>
+                <td>Ед.изм.</td>
+                <td>Кол-во</td>
+                <td>Цена, руб.</td>
+                <td>Сумма, руб</td>
+              </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                    <td data-title="Работы и материалы">
+                      <div class="strong pb-3">Забор из профнастила с односторонним покрытием ; выс. Н-2; 2 лаги;</div>
+                      <ul>
+                        <li>отечественный профнастил С8; производство Новолипецкий МК, цвет профнастила на выбор: бордовый (RAL 3005), зеленый (RAL 6005), шоколад (RAL 8017)</li>
+                        <li>столбы L-3м 60x60x2 мм</li>
+                        <li>лаги 40х20 мм</li>
+                        <li> столбы окрашены грунтовкой ГФ 21, обеспечивающей хорошую адгезию и антикоррозионную защиту (цвет грунтовки либо серый, либо кирпично-красный)</li>
+                        <li> пластиковые заглушки на столбах</li>
+                        <li> саморезы в цвет профлиста</li>
+                        <li> общее заглубление столбов на глубину 1,2 метра с шагом 2,5 метра</li>
+                      </ul>
+                    </td>
+                    <td data-title="Ед.изм.">пог.м</td>
+                    <td data-title="Кол-во">95</td>
+                    <td data-title="Цена, руб.">1200</td>
+                    <td data-title="Сумма, руб">114000</td>
+                  </tr>
+                  <tr>
+                    <td data-title="Работы и материалы">
+                      <div class="strong pb-3">Каркас  ворот 4x2 м </div>
+                      <ul>
+                        <li>каркас из профтрубы 40х20х2</li>
+                        <li>усиленные столбы 80х80 толщиной 3 мм</li>
+                        <li>изнутри запирающее устройство "Гусь" с проушинами для замка</li>
+                        <li>2 нижних стопора</li>
+                        <li>петли на подшипниках (обеспечивают бесшумное открывание и легкость вращения)</li>
+                      </ul>
+                    </td>
+                    <td data-title="Ед.изм.">пог.м</td>
+                    <td data-title="Кол-во">95</td>
+                    <td data-title="Цена, руб.">1200</td>
+                    <td data-title="Сумма, руб">114000</td>
+                  </tr>
+                  <tr>
+                    <td data-title="Работы и материалы">
+                      <div class="strong pb-3">Каркас  ворот 4x2 м</div>
+                      <ul>
+                        <li>каркас из профтрубы 40х20х2</li>
+                        <li>усиленные столбы 80х80 толщиной 3 мм</li>
+                        <li>изнутри запирающее устройство "Гусь" с проушинами для замка</li>
+                        <li>2 нижних стопора</li>
+                        <li>петли на подшипниках (обеспечивают бесшумное открывание и легкость вращения)</li>
+                      </ul>
+                    </td>
+                    <td data-title="Ед.изм.">пог.м</td>
+                    <td data-title="Кол-во">95</td>
+                    <td data-title="Цена, руб.">1200</td>
+                    <td data-title="Сумма, руб">114000</td>
+                  </tr>
+                  <tr>
+                    <td data-title="Работы и материалы">
+                      <div class="strong pb-3">Обшивка каркаса ворот профнастилом</div>
+                    </td>
+                    <td data-title="Ед.изм.">пог.м</td>
+                    <td data-title="Кол-во">95</td>
+                    <td data-title="Цена, руб.">1200</td>
+                    <td data-title="Сумма, руб">114000</td>
+                  </tr>
+                  <tr>
+                    <td data-title="Работы и материалы">
+                      <div class="strong pb-3">Обшивка каркаса калитки профнастилом</div>
+                    </td>
+                    <td colspan="4" data-title="Сумма, руб">114000</td>
+                  </tr>
+                  <tr>
+                    <td data-title="Работы и материалы">
+                      <div class="strong pb-3">Доставка (с учетом выезда и погрузочно-разгрузочных работ)</div>
+                    </td>
+                    <td colspan="4" data-title="Сумма, руб">114000</td>
+                  </tr>
+                  <tr>
+                    <td data-title="Работы и материалы">
+                      <div class="strong pb-3">Скидка за объем</div>
+                    </td>
+                    <td colspan="4" data-title="Сумма, руб">- 25 000</td>
+                  </tr>
+              <tr>
+                <td colspan="5">
+                  <div class="fw-900 h2">
+                    итого:  
+                    <span class="text-primary">120 358 руб</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- end s-calc-->
+      <div class="s-content s-content--calc section pt-0">
+        <div class="container">
+          <h2 class="strong"> С этим забором Вы получаете:</h2>
+          <p>Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами. Вам достаточно приехать в офис или вызвать замерщика на участок и выбрать материал, высоту, цвет и другие параметры ограждения.</p>
+          <div class="s-content__items">
+            <div class="row">
+                <div class="s-content__col col-lg-4 col-sm-6">
+                  <div class="s-content__item">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="s-content__icon-wrap"><img src="img/calc-i-1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col">Бесплатная аренда генератор для сварочных работ</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /+e.col.col-lg-4.col-sm-6-->
+                <div class="s-content__col col-lg-4 col-sm-6">
+                  <div class="s-content__item">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="s-content__icon-wrap"><img src="img/calc-i-2.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col">Саморезы в цвет евроштакетника в подарок </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /+e.col.col-lg-4.col-sm-6-->
+                <div class="s-content__col col-lg-4 col-sm-6">
+                  <div class="s-content__item">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="s-content__icon-wrap"><img src="img/calc-i-3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col">Бесплатный замер  при заключении договора</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /+e.col.col-lg-4.col-sm-6-->
+                <div class="s-content__col col-lg-4 col-sm-6">
+                  <div class="s-content__item">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="s-content__icon-wrap"><img src="img/calc-i-4.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col">Кованая лавочка  в подарок</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /+e.col.col-lg-4.col-sm-6-->
+                <div class="s-content__col col-lg-4 col-sm-6">
+                  <div class="s-content__item">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="s-content__icon-wrap"><img src="img/calc-i-5.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col">П-образная планка на забор</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /+e.col.col-lg-4.col-sm-6-->
+                <div class="s-content__col col-lg-4 col-sm-6">
+                  <div class="s-content__item">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="s-content__icon-wrap"><img src="img/calc-i-6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col">Строительство без предоплаты</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /+e.col.col-lg-4.col-sm-6-->
+                <div class="s-content__col col-lg-4 col-sm-6">
+                  <div class="s-content__item">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="s-content__icon-wrap"><img src="img/calc-i-7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col">Забутовка щебнем в подарок</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /+e.col.col-lg-4.col-sm-6-->
+                <div class="s-content__col col-lg-4 col-sm-6">
+                  <div class="s-content__item">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="s-content__icon-wrap"><img src="img/calc-i-8.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col">Бесплатная установка укосин на ворота и калитку</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /+e.col.col-lg-4.col-sm-6-->
+                <div class="s-content__col col-lg-4 col-sm-6">
+                  <div class="s-content__item">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="s-content__icon-wrap"><img src="img/calc-i-8.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col">Бесплатная установка стяжек на ворота и калитку</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /+e.col.col-lg-4.col-sm-6-->
+            </div>
+          </div>
+          <h2 class="strong">Сравнивая наше предложение с другими компаниями убедитесь:</h2>
+          <h4 class="text-primary">1. Включена ли в расчет доставка.</h4>
+          <p>Компании называют клиентам низкую цену на забор под ключ, но в отличии от нас без учета доставки. Когда спрашиваешь конкретно, что доставка включена или нет, компании уточняют километраж от МКАДа и называют дополнительную сумму к уже озвученной.</p>
+          <h4 class="text-primary">2. Указана ли в расчете и договоре толщина столбов, в том числе на воротах и калитке.</h4>
+          <p>Если этого нет, то Вам привезут столбы на забор максимум 1,5 мм, и усиленных столбов на воротах и калитке небудет. О последствиях строительства такого забора говорить не приходится.</p>
+          <h4 class="text-primary">3. Есть ли на воротах и калитке фурнитура.</h4>
+          <p>Многие продают ворота и калитки без необходимой фурнитуры, а впоследствии на участке стоимость увеличивается. </p>
+          <h4 class="text-primary">4. Если калитка стоит отдельно от ворот, то учтенли дополнительный столб</h4>
+          <p>При таком расположении ворот и калитки многие компании не считают в расчете дополнительный усиленный столб. Об этом клиенты узнают уже на участке.</p>
+          <h5>В итоге при дешевом расчете цена выходит на круг идентичная, а чаще и дороже, чем у нас. Компании называют цену ниже, надеясь, что Вы согласитесь на замер. А во время замера, когда цена увеличится, что Вы не захотите терять время и согласитесь с повышенной ценой. НЕ ДАЙТЕ СЕБЯ ОБМАНУТЬ!!!</h5>
+          <div class="row">
+            <div class="col-lg-4"><a class="btn btn-primary btn-block btn-lg" href="#">Получить консультацию по расчету</a></div>
+            <div class="col-lg-4"><a class="btn btn-primary btn-block btn-lg" href="#">Отправить на почту детальный расчет</a></div>
+            <div class="col-lg-4"><a class="btn btn-primary btn-block btn-lg" href="#">Распечатать расчет</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- start s-why-->
+      <div class="s-why section" id="s-why">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>Почему стоить купить забор у нас</h2>
+          </div>
+          <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="s-why__item">
+                    <div class="s-why__img-wrap"><img class="res-i" src="img/s-why-1.svg" alt=""/>
+                    </div>
+                    <div class="s-why__title">Наш опыт
+                    </div>
+                    <p>Огромный опыт работы с металоконструкциями позволил отладить поризводственные процессы до автоматизма и потому гарантируем скорость монтажа, надежность и долговечность изделий</p>
+                  </div>
+                </div>
+                <!-- /.col-lg-4.col-sm-6-->
+                <div class="col-lg-4 col-sm-6">
+                  <div class="s-why__item">
+                    <div class="s-why__img-wrap"><img class="res-i" src="img/s-why-2.svg" alt=""/>
+                    </div>
+                    <div class="s-why__title">Материалы
+                    </div>
+                    <p>Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами. </p>
+                  </div>
+                </div>
+                <!-- /.col-lg-4.col-sm-6-->
+                <div class="col-lg-4 col-sm-6">
+                  <div class="s-why__item">
+                    <div class="s-why__img-wrap"><img class="res-i" src="img/s-why-3.svg" alt=""/>
+                    </div>
+                    <div class="s-why__title">Низкие цены
+                    </div>
+                    <p>Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами. </p>
+                  </div>
+                </div>
+                <!-- /.col-lg-4.col-sm-6-->
+                <div class="col-lg-4 col-sm-6">
+                  <div class="s-why__item">
+                    <div class="s-why__img-wrap"><img class="res-i" src="img/s-why-4.svg" alt=""/>
+                    </div>
+                    <div class="s-why__title">Собственное производство
+                    </div>
+                    <p>Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами. </p>
+                  </div>
+                </div>
+                <!-- /.col-lg-4.col-sm-6-->
+                <div class="col-lg-4 col-sm-6">
+                  <div class="s-why__item">
+                    <div class="s-why__img-wrap"><img class="res-i" src="img/s-why-5.svg" alt=""/>
+                    </div>
+                    <div class="s-why__title">Мы близко к Вам
+                    </div>
+                    <p>Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами. </p>
+                  </div>
+                </div>
+                <!-- /.col-lg-4.col-sm-6-->
+                <div class="col-lg-4 col-sm-6">
+                  <div class="s-why__item">
+                    <div class="s-why__img-wrap"><img class="res-i" src="img/s-why-6.svg" alt=""/>
+                    </div>
+                    <div class="s-why__title">Мы готовы ставить заборы
+                    </div>
+                    <p>20 км ограждений на складах. Стабильный запас комплектующих и материалов ускоряет процесс отгрузки продукции. 250 машин со стройматериалами отгружается ежедневно</p>
+                  </div>
+                </div>
+                <!-- /.col-lg-4.col-sm-6-->
+          </div>
+        </div>
+      </div>
+      <!-- end s-why-->
+      <footer class="footer">
+        <div class="container">
+          <div class="d-none d-lg-block">
+            <ul class="menu">
+              <li class="menu-item"><a href="#">Отзывы</a></li>
+              <li class="menu-item"><a href="#">Фотогалерея</a></li>
+              <li class="menu-item"><a href="#">Наша команда</a></li>
+              <li class="menu-item"><a href="#">Новости</a></li>
+              <li class="menu-item"><a href="#">Вакансии</a></li>
+              <li class="menu-item"><a href="#">Статьи</a></li>
+              <li class="menu-item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="mb-2 col-md">
+              <div class="footer__copy">© Доступный забор
+              </div>
+              <div><a class="text-white" href="#">Пользовательское соглашение</a></div>
+              <div><a class="text-white" href="#">Карта сайта</a></div>
+            </div>
+            <div class="mb-2 col-md">
+              <div><a class="text-white" href="tel:+7 945 999 88 99">+7 945 999 88 99</a></div>
+              <div><a class="text-white tdu" href="mailto:info@info.com">info@info.com</a></div>
+              <div>145689, Московская обл. г. Такой, ул. Такая 36</div>
+              <div class="soc"><a class="soc__item" href="" target="_blank"><i class="fab fa-twitter"></i></a><a class="soc__item" href="" target="_blank"><i class="fab  fa-instagram"></i></a><a class="soc__item" href="" target="_blank"><i class="fab  fa-facebook-f"></i></a><a class="soc__item" href="" target="_blank"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="mb-2 col-md-auto">
+              <div>ИНН 564689879</div>
+              <div>ОГРН 4654654664</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal modal-win" id="modal">
+      <form>
+        <p class="text-center"><strong>Нужен забор из профнастила   высотой  1,5   м?<br/>Оставьте Ваш телефон и специалист расскажет Вам все нюансы данного забора.</strong></p>
+        <div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="Введите свой телефон:" placeholder="tel"/>
+        </div>
+        <!-- +e.input-wrap-->
+        <div class="form-wrap__btn-wrap">
+          <button class="form-wrap__btn btn btn-lg btn-accent">Узнать подробнее
+          </button>
+        </div>
+        <div class="form-wrap__polite text-center">
+          <label>
+            <input type="checkbox" checked="checked"/>
+            
+            я даю согласие на обработку персональных данных
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide modal modal-win form-wrap text-center" id="thanks"><br/>
+      <h3>Заявка принята</h3><br/>
+      <p>Скоро с Вами свяжутся</p><br/>
+    </div>
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-form" id="modal-call">
+      <form>
+        <div class="text-center">
+          <div class="form-wrap__title h3 ttu">Обратный звонок
+          </div>
+          <p>Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут</p>
+        </div>
+        <div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше Имя" required="required"/>
+        </div>
+        <!-- +e.input-wrap-->
+        <div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="Ваш телефон" required="required"/>
+        </div>
+        <!-- +e.input-wrap--><input class="form-wrap__btn btn btn-block btn-primary mb-4" type="submit" value="Перезвоните мне"/>
+        <div class="form-wrap__polite">
+          <label>
+            <input type="checkbox" checked="checked"/>
+            
+            я даю согласие на обработку персональных данных
+          </label>
+        </div>
+      </form>
+    </div>
+    <!-- #modal-call-->
+    <div class="zoom-anim-dialog mfp-hide modal-win modal-form modal-win--lg" id="modal-info">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4">
+          <div class="btn-qu">?	
+          </div>
+          <div class="h4 strong">Типы покрытия</div>
+        </div>
+        <div class="col">
+          <table class="table">
+            <thead>
+              <tr>
+                <td> </td>
+                <td>Лицевая сторона</td>
+                <td>Внутренняя сторона</td>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Одностороннее покрытие</td>
+                  <td data-title="Лицевая сторона"><img src="img/modal-1.jpg" alt=""/></td>
+                  <td data-title="Внутренняя сторона"><img src="img/modal-2.jpg" alt=""/></td>
+                </tr>
+                <tr>
+                  <td>Двухстороннее покрытие</td>
+                  <td data-title="Лицевая сторона"><img src="img/modal-1.jpg" alt=""/></td>
+                  <td data-title="Внутренняя сторона"><img src="img/modal-2.jpg" alt=""/></td>
+                </tr>
+                <tr>
+                  <td>Оцинкованное покрытие</td>
+                  <td data-title="Лицевая сторона"><img src="img/modal-1.jpg" alt=""/></td>
+                  <td data-title="Внутренняя сторона"><img src="img/modal-2.jpg" alt=""/></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- #modal-call-->
+    <!-- modal-->
+    <script src="js/jquery.min.js"></script>
+    <script src="libs/magnificPopup/jquery.magnific-popup.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
+    <script src="libs/jquery.touchSwipe.min.js"></script>
+    <script src="libs/sticky-kit.js"></script>
+    <script src="libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.js"></script>
+    <script src="libs/jquery.mask.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
