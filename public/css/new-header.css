@@ -131,6 +131,7 @@
   padding-right: 0;
 }
 .top-line__tel-number {
+  display: block;
   font-size: 24px;
   line-height: 23px;
   color: #000000;
@@ -205,6 +206,10 @@
 
 .menu-item {
   text-transform: uppercase;
+}
+
+.top-line__link .icon {
+  color: #cc6666 !important;
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -312,12 +317,28 @@
   }
 }
 @media (max-width: 992px) {
+  .calc-icon {
+    margin-right: 10px;
+  }
+
+  .fixed .toggle-mnu {
+    margin-top: -10px;
+  }
+
   .top-line__tel-btn {
     display: none;
   }
 
-  .top-line__tel-contacts {
+  .top-line__tel-calc-wrap,
+.top-line__tel-time,
+.top-line__tel-soc {
     display: none;
+  }
+
+  .top-line__tel-number {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
   }
 
   .top-line__logo-title {
@@ -410,5 +431,9 @@
 
   .top-line__tel-block {
     padding-left: 20px;
+  }
+
+  .top-line__tel-number {
+    margin-top: 11px;
   }
 }

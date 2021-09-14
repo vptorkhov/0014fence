@@ -57,17 +57,14 @@ html(lang='ru')
 									use(xlink:href='img/svg/sprite.svg#clock')
 								| ежедневно с 09.00 до 21.00
 						a.top-line__btn.mb-3(href='#')
-							svg.icon.icon-calculator
-								use(xlink:href='img/svg/sprite.svg#calculator')
-							| Забор из профнастила
+							| Вызвать замерщика
 						a.top-line__btn.mb-3(href='#')
-							svg.icon.icon-calculator
-								use(xlink:href='img/svg/sprite.svg#calculator')
-							| Забор из евроштакетника
+							| Заказать звонок
 						a.top-line__btn.mb-3(href='#')
-							svg.icon.icon-calculator
-								use(xlink:href='img/svg/sprite.svg#calculator')
-							| Забор из сетки рабицы
+							img.calc-icon(src='img/svg/calc.svg' alt=' ')
+							| Калькулятор забора
+						a.top-line__btn.mb-3(href='#')
+							| Выбрать город
 			// мобильное меню
 			// start HEADER.header
 			header.header
@@ -83,26 +80,26 @@ html(lang='ru')
 									.top-line__logo-caption Установка заборов под ключ в&nbsp;Москве и&nbsp;Московской области
 							.top-line__tel-block.col
 								.row
-									.col-auto
+									.col-auto.top-line__tel-calc-wrap
 										a.top-line__tel-calc(href="#")
 											img.calc-icon(src='img/svg/calc.svg' alt=' ')
 											.caption Калькулятор забора
 										.top-line__tel-choose
 											a.top-line__tel-menu(href="#") Выберите город
-											ul.top-line__tel-list
-												a(href="#")
-													li Москва
-												a(href="#")
-													li Санкт-Петербург
-												a(href="#")
-													li Новосибирск
-												a(href="#")
-													li Краснодар
+											//- ul.top-line__tel-list
+											//- 	a(href="#")
+											//- 		li Москва
+											//- 	a(href="#")
+											//- 		li Санкт-Петербург
+											//- 	a(href="#")
+											//- 		li Новосибирск
+											//- 	a(href="#")
+											//- 		li Краснодар
 									.col-auto.top-line__tel-btn-wrap
 										a.top-line__tel-btn(href="#") Вызвать замерщика
 										a.top-line__tel-btn(href="#") Заказать звонок
 									.col-auto.top-line__tel-contacts
-										.top-line__tel-number +7 (499) 404-26-63
+										a.top-line__tel-number(href="tel:+74994042663")  +7 (499) 404-26-63
 										.top-line__tel-time График работы: ежедневно с 09:00 до 21:00
 										.top-line__tel-soc
 											a(href="#").top-line__tel-whatsapp

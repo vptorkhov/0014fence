@@ -132,7 +132,7 @@
 			}
 			&:hover {
 				background-color: #d41c1c;
-				color:#ffffff;
+				color: #ffffff;
 			}
 		}
 		&-contacts {
@@ -140,6 +140,7 @@
 			padding-right: 0;
 		}
 		&-number {
+			display: block;
 			font-size: 24px;
 			line-height: 23px;
 			color: #000000;
@@ -208,6 +209,12 @@
 }
 .menu-item {
 	text-transform: uppercase;
+}
+
+.top-line__link {
+	.icon {
+		color: #cc6666 !important;
+	}
 }
 @media (max-width: 1200px) and (min-width: 992px) {
 	.top-line {
@@ -326,11 +333,26 @@
 	}
 }
 @media (max-width: 992px) {
+	.calc-icon{
+		margin-right: 10px;
+	}
+	.fixed {
+		.toggle-mnu {
+			margin-top: -10px;
+		}
+	}
 	.top-line__tel-btn {
 		display: none;
 	}
-	.top-line__tel-contacts {
+	.top-line__tel-calc-wrap,
+	.top-line__tel-time,
+	.top-line__tel-soc {
 		display: none;
+	}
+	.top-line__tel-number {
+		font-size: 20px;
+		line-height: 20px;
+		margin-top: 10px;
 	}
 	.top-line__logo-title {
 		font-size: 22px;
@@ -369,44 +391,55 @@
 			right: 18px;
 		}
 	}
-	.top-line__tel-list{
+	.top-line__tel-list {
 		top: 28px;
-		a{
+		a {
 			font-size: 12px;
 		}
-		li{
+		li {
 			width: 141px;
 		}
 	}
-	.toggle-mnu{
+	.toggle-mnu {
 		padding-top: 10px;
 	}
 }
-@media (max-width:768px){
-	.top-line{
-		.container{
+@media (max-width: 768px) {
+	.top-line {
+		.container {
 			padding-left: 0;
 			padding-right: 0;
 		}
 	}
-	.top-line__logo-block{
+	.top-line__logo-block {
 		flex-direction: column;
 		align-items: center;
 	}
-	.top-line__logo-caption{
+	.top-line__logo-caption {
 		display: none;
 	}
-	.top-line__logo-title{
+	.top-line__logo-title {
 		font-size: 18px;
 		line-height: 18px;
 	}
-	.top-line__tel-btn-wrap{
+	.top-line__tel-btn-wrap {
 		display: none;
 	}
-	.top-line__tel-calc{
+	.top-line__tel-calc {
 		margin-top: 13px;
 	}
-	.top-line__tel-block{
+	.top-line__tel-block {
 		padding-left: 20px;
 	}
+	.top-line__tel-number {
+		margin-top: 11px;
+	}
+	// .top-line__tel-block{
+	// 	align-items: center;
+	// 	display: flex;
+	// }
+	// .top-line__col{
+	// 	display: flex;
+	// 	align-items: center;
+	// }
 }
