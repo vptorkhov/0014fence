@@ -42,6 +42,11 @@ jQuery(document).ready(function ($) {
 		},
 		triggerOnTouchEnd: false,
 	});
+	// открыть выбор города
+	$('.top-line__tel-menu').click(function(){
+		$(this).toggleClass('active')
+		$('.top-line__tel-list').slideToggle();
+	});
 	// / закрыть меню при горизонтальном свайпе
 	// /закрыть/открыть мобильное меню
 

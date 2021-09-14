@@ -1,0 +1,858 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='utf-8')
+		title title
+		meta(name='description' content='о чем страница')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width')
+		meta(property='og:image' content='path/to/image.jpg')
+		link(rel='shortcut icon' type='image/png' href='img/favicon/favicon.png')
+		// Custom Browsers Color
+		meta(name='theme-color' content='#3361d8')
+		link(rel='stylesheet' href='libs/magnificPopup/magnific-popup.css')
+		link(rel='stylesheet' href='libs/slick/slick.css')
+		link(rel='stylesheet' href='css/main.min.css')
+		link(rel='stylesheet' href='css/main.min.css')
+		link(rel='stylesheet' href='css/new-header.css')
+	body
+		.main-wrapper
+			.trop.main-mnu.hidden-mnu.hidden-lg.landingMenu2.d-lg-none
+				a.toggle-mnu.toggle-mnu-1(href='#')
+					span
+				.wrapp-hidden
+					ul.menu
+						li.menu-item.menu-item-has-children
+							a(href='#') Каталог
+							ul.sub-menu
+								li.menu-item
+									a(href='#') Строительство загородных домов
+								li.menu-item
+									a(href='#') Отделка загородных домов
+								li.menu-item
+									a(href='#') Покраска деревянных домов
+								li.menu-item
+									a(href='#') Штукатурные фасады загородных домов
+						li.menu-item
+							a(href='#') Цены
+						li.menu-item
+							a(href='#') Информация
+						li.menu-item
+							a(href='#') КОМПАНИЯ
+						li.menu-item
+							a(href='#') КАЛЬКУЛЯТОР
+						li.menu-item
+							a(href='#') КОНТАКТЫ
+					.top-line
+						.mb-3
+							a.top-line__tel.text-white(href='tel:8(499)955-55-03') +7 (499) 404-26-63
+						.mb-3
+							a.top-line__link.text-white(href='mailto:info@dostup-zabor.ru')
+								svg.icon.icon-envelope
+									use(xlink:href='img/svg/sprite.svg#envelope')
+								|info@dostup-zabor.ru
+						.mb-3
+							.top-line__link.text-white
+								svg.icon.icon-clock
+									use(xlink:href='img/svg/sprite.svg#clock')
+								| ежедневно с 09.00 до 21.00
+						a.top-line__btn.mb-3(href='#')
+							svg.icon.icon-calculator
+								use(xlink:href='img/svg/sprite.svg#calculator')
+							| Забор из профнастила
+						a.top-line__btn.mb-3(href='#')
+							svg.icon.icon-calculator
+								use(xlink:href='img/svg/sprite.svg#calculator')
+							| Забор из евроштакетника
+						a.top-line__btn.mb-3(href='#')
+							svg.icon.icon-calculator
+								use(xlink:href='img/svg/sprite.svg#calculator')
+							| Забор из сетки рабицы
+			// мобильное меню
+			// start HEADER.header
+			header.header
+				// start .top_line
+				.top-line
+					.container
+						.row
+							.top-line__logo-block.col-sm-auto.col.d-none.d-sm-flex
+								a.logo(href='/')
+									img(src='img/svg/logo.svg' alt=' ')
+								.top-line__logo-wrap
+									.top-line__logo-title Доступные заборы
+									.top-line__logo-caption Установка заборов под ключ в&nbsp;Москве и&nbsp;Московской области
+							.top-line__tel-block.col
+								.row
+									.col-auto
+										a.top-line__tel-calc(href="#")
+											img.calc-icon(src='img/svg/calc.svg' alt=' ')
+											.caption Калькулятор забора
+										.top-line__tel-choose
+											a.top-line__tel-menu(href="#") Выберите город
+											ul.top-line__tel-list
+												a(href="#")
+													li Москва
+												a(href="#")
+													li Санкт-Петербург
+												a(href="#")
+													li Новосибирск
+												a(href="#")
+													li Краснодар
+									.col-auto.top-line__tel-btn-wrap
+										a.top-line__tel-btn(href="#") Вызвать замерщика
+										a.top-line__tel-btn(href="#") Заказать звонок
+									.col-auto.top-line__tel-contacts
+										.top-line__tel-number +7 (499) 404-26-63
+										.top-line__tel-time График работы: ежедневно с 09:00 до 21:00
+										.top-line__tel-soc
+											a(href="#").top-line__tel-whatsapp
+												img(src="img/svg/whatsapp.svg", alt="")
+											a(href="#").top-line__tel-telegram
+												img(src="img/svg/telegram.svg", alt="")
+											a(href="#").top-line__tel-vk
+												img(src="img/svg/vk.svg", alt="")
+											a(href="mailto:info@dostup-zabor.ru").top-line__tel-mail
+												img(src="img/svg/mail.svg", alt="")
+												p info@dostup-zabor.ru
+							//- .top-line__tel-block.col
+							//- 	.row
+							//- 		.col-lg.d-none.d-md-block
+							//- 			.row
+							//- 				.top-line__col.col-auto
+							//- 					a.top-line__link(href='mailto:dostup-zabor@yandex.ru')
+							//- 						svg.icon.icon-envelope
+							//- 							use(xlink:href='img/svg/sprite.svg#envelope')
+							//- 						| dostup-zabor@yandex.ru
+							//- 				.top-line__col.col-xl-auto.col
+							//- 					.top-line__link
+							//- 						svg.icon.icon-clock
+							//- 							use(xlink:href='img/svg/sprite.svg#clock')
+							//- 						| ежедневно с 09.00 до 21.00
+							//- 		.top-line__col.col-md-auto.col-sm.text-sm-right
+							//- 			a.top-line__tel.text-primary(href='tel:8(499)955-55-03') 8(499)955-55-03
+							//- 		.top-line__col.col-md-auto.text-sm-right
+							//- 			a.top-line__link-modal.popup-with-move-anim.text-body(href='#modal-call') Заказать звонок
+							//- 	.row.d-none.d-lg-flex
+							//- 		.col-4
+							//- 			a.top-line__btn(href='#')
+							//- 				svg.icon.icon-calculator
+							//- 					use(xlink:href='img/svg/sprite.svg#calculator')
+							//- 				| Забор из профнастила
+							//- 		.col-4
+							//- 			a.top-line__btn(href='#')
+							//- 				svg.icon.icon-calculator
+							//- 					use(xlink:href='img/svg/sprite.svg#calculator')
+							//- 				| Забор из евроштакетника
+							//- 		.col-4
+							//- 			a.top-line__btn(href='#')
+							//- 				svg.icon.icon-calculator
+							//- 					use(xlink:href='img/svg/sprite.svg#calculator')
+							//- 				| Забор из сетки рабицы
+							.top-line__col.col-auto.d-lg-none
+								a.toggle-mnu.toggle-mnu-1.d-lg-none(href='#')
+									small МЕНЮ
+									span
+				// end .top_line
+				// start top-nav
+				.top-nav.d-none.d-lg-block
+					.container
+						ul.menu
+							li.menu-item.menu-item-has-children
+								a(href='#') Каталог
+								ul.sub-menu
+									li.menu-item
+										a(href='#') Строительство загородных домов
+									li.menu-item
+										a(href='#') Отделка загородных домов
+									li.menu-item
+										a(href='#') Покраска деревянных домов
+									li.menu-item
+										a(href='#') Штукатурные фасады загородных домов
+							li.menu-item
+								a(href='#') ЦЕНЫ
+							li.menu-item
+								a(href='#') ИНФОРМАЦИЯ
+							li.menu-item
+								a(href='#') КОМПАНИЯ
+							li.menu-item
+								a(href='#') КАЛЬКУЛЯТОР
+							li.menu-item
+								a(href='#') КОНТАКТЫ
+				// end top-nav
+				// start header-block
+				#header-block.header-block.header-block--main-page
+					.container
+						.row
+							.header-block__col.col-auto
+								h1 Построим надежный забор в московской области
+								.h1.accent ОТ 455 РУБ. ЗА П. М. без предоплаты
+								.header-block__block
+									.form-wrap
+										form
+											p
+												| Оставьте заявку прямо сейчас и узнайте точную стоимость Вашего забора уже через 5 минут
+											.form-wrap__input-wrap.form-group
+												input.form-wrap__input.form-control(type='tel' placeholder='+ 7 (xxx) xxx - xx - xx')
+											// +e.input-wrap
+											.form-wrap__btn-wrap
+												button.form-wrap__btn.btn.btn-lg.btn-accent
+													| Узнать точную стоимость
+											.form-wrap__polite
+												label
+													input(type='checkbox' checked='checked')
+													| 													я даю согласие на обработку персональных данных
+						.header-block__img-wrap
+							img(src='img/header-img.png' alt='')
+						// добавил  22.02
+						.row
+							.col-lg.col-md-6
+								.header-block__item
+									.row
+										.col-auto
+											.header-block__img-wrap-item
+												img(src='img/svg/head-1.svg' alt='')
+										.col
+											.header-block__text
+												.header-block__title
+													| В срок
+												p Сроки строительства прописаны в договоре. В наличии материала на 15,2 км забора
+							// .col
+							.col-lg.col-md-6
+								.header-block__item
+									.row
+										.col-auto
+											.header-block__img-wrap-item
+												img(src='img/svg/head-2.svg' alt='')
+										.col
+											.header-block__text
+												.header-block__title
+													| Без риска
+												p Работаем без предоплаты. Вы платите после завершения строительства
+							// .col
+							.col-lg.col-md-6
+								.header-block__item
+									.row
+										.col-auto
+											.header-block__img-wrap-item
+												img(src='img/svg/head-3.svg' alt='')
+										.col
+											.header-block__text
+												.header-block__title
+													| Срок службы от 20 лет
+												p Благодаря сертифицированным материалам и правильной установке опытной бригадой
+							// .col
+							// /добавил  22.02
+							// end header-block
+							// end HEADER.header
+							.section
+								.container
+									.section-title.text-center
+										h2  ПРОЕКТЫ ЗАБОРОВ ИЗ ПРОФНАСТИЛА И ЦЕНЫ
+									p
+										| Ниже приведены цены на заборы из профнастила с установкой "под ключ" за 1 погонный метр в различной комплектации. Окончательная стоимость забора зависит от марки и толщины профлиста, количества поперечных лаг, способа установки столбов, высоты ограждения, а также необходимости проведения дополнительных работ — устройства фундамента, установки ворот, калитки. При изменении комплектации она может отличаться в незначительном диапазоне. Рассчитать точную стоимость ограждения, а также уточнить информацию об акциях и скидках можно у специалиста нашей компании.
+							// start s-why-prod
+							#s-why-prod.s-why-prod.section
+								.container
+									.section-title.text-center
+										h2 Какие заборы мы строим
+									.row
+										.s-why-prod__col.col-lg-6
+											.s-why-prod__item
+												.s-why-prod__img-wrap
+													img.res-i(src='img/fence-1.png' alt='')
+												.s-why-prod__text-block
+													.s-why-prod__title
+														a(href='#')
+															| Заборы из 
+															span.text-primary профнастила
+													p
+														| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+													// добавил  22.02
+													.row.row--small
+														.col-auto
+															a.s-why-prod__btn(href='#') Подробнее
+														.col-auto
+															a.s-why-prod__btn(href='#') Рассчитать
+										// /.col-lg-6
+										.s-why-prod__col.col-lg-6
+											.s-why-prod__item
+												.s-why-prod__img-wrap
+													img.res-i(src='img/fence-2.png' alt='')
+												.s-why-prod__text-block
+													.s-why-prod__title
+														a(href='#')
+															| Заборы из 
+															span.text-primary сетки-рябицы
+													p
+														| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+													// добавил  22.02
+													.row.row--small
+														.col-auto
+															a.s-why-prod__btn(href='#') Подробнее
+														.col-auto
+															a.s-why-prod__btn(href='#') Рассчитать
+										// /.col-lg-6
+										.s-why-prod__col.col-lg-6
+											.s-why-prod__item
+												.s-why-prod__img-wrap
+													img.res-i(src='img/fence-3.png' alt='')
+												.s-why-prod__text-block
+													.s-why-prod__title
+														a(href='#')
+															| Заборы из 
+															span.text-primary металического штакетника
+													p
+														| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+													// добавил  22.02
+													.row.row--small
+														.col-auto
+															a.s-why-prod__btn(href='#') Подробнее
+														.col-auto
+															a.s-why-prod__btn(href='#') Рассчитать
+										// /.col-lg-6
+										.s-why-prod__col.col-lg-6
+											.s-why-prod__item
+												.s-why-prod__img-wrap
+													img.res-i(src='img/fence-4.png' alt='')
+												.s-why-prod__text-block
+													.s-why-prod__title
+														a(href='#')
+															span.text-primary 3D 
+															| 													заборы
+													p
+														| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+													// добавил  22.02
+													.row.row--small
+														.col-auto
+															a.s-why-prod__btn(href='#') Подробнее
+														.col-auto
+															a.s-why-prod__btn(href='#') Рассчитать
+										// /.col-lg-6
+										.s-why-prod__col.col-lg-6
+											.s-why-prod__item
+												.s-why-prod__img-wrap
+													img.res-i(src='img/fence-5.png' alt='')
+												.s-why-prod__text-block
+													.s-why-prod__title
+														a(href='#')
+															span.text-primary Деревянные 
+															| 													заборы
+													p
+														| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+													// добавил  22.02
+													.row.row--small
+														.col-auto
+															a.s-why-prod__btn(href='#') Подробнее
+														.col-auto
+															a.s-why-prod__btn(href='#') Рассчитать
+										// /.col-lg-6
+										.s-why-prod__col.col-lg-6
+											.s-why-prod__item
+												.s-why-prod__img-wrap
+													img.res-i(src='img/fence-6.png' alt='')
+												.s-why-prod__text-block
+													.s-why-prod__title
+														a(href='#')
+															| Откатные 
+															span.text-primary ворота
+													p
+														| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+													// добавил  22.02
+													.row.row--small
+														.col-auto
+															a.s-why-prod__btn(href='#') Подробнее
+														.col-auto
+															a.s-why-prod__btn(href='#') Рассчитать
+										// /.col-lg-6
+										.s-why-prod__col.col-lg-6
+											.s-why-prod__item
+												.s-why-prod__img-wrap
+													img.res-i(src='img/fence-7.png' alt='')
+												.s-why-prod__text-block
+													.s-why-prod__title
+														a(href='#')
+															span.text-primary Кирпичные столбы
+													p
+														| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+													// добавил  22.02
+													.row.row--small
+														.col-auto
+															a.s-why-prod__btn(href='#') Подробнее
+														.col-auto
+															a.s-why-prod__btn(href='#') Рассчитать
+										// /.col-lg-6
+										.s-why-prod__col.col-lg-6
+											.s-why-prod__item
+												.s-why-prod__img-wrap
+													img.res-i(src='img/fence-8.png' alt='')
+												.s-why-prod__text-block
+													.s-why-prod__title
+														a(href='#')
+															span.text-primary Ленточный фундамент
+													p
+														| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+													// добавил  22.02
+													.row.row--small
+														.col-auto
+															a.s-why-prod__btn(href='#') Подробнее
+														.col-auto
+															a.s-why-prod__btn(href='#') Рассчитать
+										// /.col-lg-6
+										// end s-why-prod
+										// start sprice
+										#sprice.sprice
+											.container.section
+												.section-title.text-center
+													h2 ОЗНАКОМЬТЕСЬ С НАШИМИ ПРИЯТНЫМИ ЦЕНАМИ
+												p
+													| Ниже приведены цены на заборы из профнастила с установкой "под ключ" за 1 погонный метр в различной комплектации. Окончательная стоимость забора зависит от марки и толщины профлиста, количества поперечных лаг, способа установки столбов, высоты ограждения, а также необходимости проведения дополнительных работ — устройства фундамента, установки ворот, калитки. При изменении комплектации она может отличаться в незначительном диапазоне. Рассчитать точную стоимость ограждения, а также уточнить информацию об акциях и скидках можно у специалиста нашей компании.
+												.sprice__table-wrap
+													table(cellspacing='6')
+														thead
+															tr
+																th
+																th
+																	.sprice__th-inner(style='background-image: url(img/price-1.jpg); ')
+																		| Профнастил
+																th
+																	.sprice__th-inner(style='background-image: url(img/price-2.jpg); ')
+																		| Евроштакетник
+																th
+																	.sprice__th-inner(style='background-image: url(img/price-3.jpg); ')
+																		| Сетка-рабица
+																th
+																	.sprice__th-inner(style='background-image: url(img/price-4.jpg); ')
+																		| Секционный
+																th
+																	.sprice__th-inner(style='background-image: url(img/price-5.jpg); ')
+																		| Деревянный
+																th
+																	.sprice__th-inner(style='background-image: url(img/price-6.jpg); ')
+																		| 3D
+														tbody
+															tr
+																td 1,5 м
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 930
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1340
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 455
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1610
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1150
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1052
+															tr
+																td 1,8 м
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 980
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1350
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 475
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1640
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1160
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1087
+															tr
+																td 2 м
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1010
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1365
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 535
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1660
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1180
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1212
+															tr
+																td 2,2 м
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1160
+																td
+																td
+																td
+																td
+																td
+																	.sprice__text
+																		| от 1303
+															tr
+																td 2,5 м
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1210
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1690
+																td  
+																td  
+																td  
+																td  
+															tr
+																td 3 м
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 1810
+																td
+																	a.sprice__text.popup-with-move-anim(href='#modal') от 2070
+																td  
+																td  
+																td  
+																td  
+												// +e.table-wrap
+												// end sprice
+												// start s-stock
+												section#s-stock.s-stock.section
+													.container
+														.section-title.text-center
+															h2 изучите наши привлекательные акции
+														.s-stock__item(style='background-image: url(img/discont-1.jpg);')
+															h3.s-stock__title
+																| Получите забутовку щебнем всех столбов бесплатно
+															p
+																| Это делается для того, чтобы ваши столбы стояли ровно на пучинистых грунтах нашей области. Пучинистый грунт способен впитывать в себя и накапливать влагу, а затем при морозах расширяться и двигать всё, в нём находящееся, в том числе столбы. Щебень же влагу не впитывает, и при промораживании окружающего грунта лишь будет сам двигаться в лунке, не передавая давление на столб. БЕЗ ЗАБУТОВКИ ВЫ РИСКУЕТЕ ПОЛУЧИТЬ КРИВЫЕ СТОЛБЫ В МОРОЗЫ»
+															.row
+																.col-md-auto
+																.col
+																	a.s-stock__btn.btn.btn-lg.btn-accent.popup-with-move-anim(href='#modal' data-title='Получите забутовку щебнем всех столбов бесплатно') Воспользоваться акцией
+														// +e.item
+														.s-stock__item(style='background-image: url(img/discont-2.jpg);')
+															h3.s-stock__title
+																| Получите бесплатно запорную фурнитуру на ворота и калитку
+															p
+																| Закажите забор в компании "Доступные заборы" и мы бесплатно установим на Ваши ворота и калитку всю запорную фурнитуру: на воротах будут установлены нижние стопоры, изнутри будет установлено запирающееся устройство "Гусь" с проушинами для замка, на калитке будут установлены ручки, снаружи будут установлены проушины для замка
+															.row
+																.col-md-auto
+																.col
+																	a.s-stock__btn.btn.btn-lg.btn-accent.popup-with-move-anim(href='#modal' data-title='Получите бесплатно запорную фурнитуру на ворота и калитку') Воспользоваться акцией
+														// +e.item
+														.s-stock__item(style='background-image: url(img/discont-3.jpg);')
+															h3.s-stock__title
+																| Получите антивандальные болты вместе с установкой бесплатно*
+															p
+																| Очень полезный подарок для тех, кто устанавливает забор на дачном участке. Предназначены для защиты профлиста от кражи,  а также проникновения посторонних лиц на участок. С такими болтами Вы будете в полной безопасности.
+															.row
+																.col-md-auto
+																	small *При заказе забора от 70 п.м.
+																.col
+																	a.s-stock__btn.btn.btn-lg.btn-accent.popup-with-move-anim(href='#modal' data-title='Получите антивандальные болты вместе с установкой бесплатно*') Воспользоваться акцией
+														// +e.item
+														.s-stock__item(style='background-image: url(img/discont-4.jpg);')
+															h3.s-stock__title
+																| Получите П-образную планку на забор С-8 в подарок*
+															p
+																| П-образная планка изготовлена из отечественного металла, как и сам профнастил (производство НЛМК). Благодаря П-образная планка добавляет конструкции жесткости, защищает верхнюю кромку листа от осадков, придает эстетичный внешний вид. Благодаря ей забор обретает более законченный внешний вид.
+															.row
+																.col-md-auto
+																	small  *При заказе забора из профнастил С-8 от 70 п.м. и монтаже в будний день
+																.col
+																	a.s-stock__btn.btn.btn-lg.btn-accent.popup-with-move-anim(href='#modal' data-title='Получите П-образную планку на забор С-8 в подарок*') Воспользоваться акцией
+														// +e.item
+														.s-stock__item(style='background-image: url(img/discont-5.jpg);')
+															h3.s-stock__title
+																| Получите в подарок кованую лавочку
+															p
+																| Благодаря эстетичному внешнему виду такая лавочка гармонично впишется в интерьер Вашего участка и станет Ваш надежным другом и опорой.
+															.row
+																.col-md-auto
+																	small
+																		| * предоставляется 1 из 3-х услуг на выбор клиента (услуга 3, услуга 4 либо услуга 5)
+																.col
+																	a.s-stock__btn.btn.btn-lg.btn-accent.popup-with-move-anim(href='#modal' data-title='Получите в подарок кованую лавочку') Воспользоваться акцией
+														// +e.item
+														// end s-stock
+														// start s-why
+														#s-why.s-why.section
+															.container
+																.section-title.text-center
+																	h2 Почему стоить купить забор у нас
+																.row
+																	.col-lg-4.col-sm-6
+																		.s-why__item
+																			.s-why__img-wrap
+																				img.res-i(src='img/s-why-1.svg' alt='')
+																			.s-why__title
+																				| Наш опыт
+																			p
+																				| Огромный опыт работы с металоконструкциями позволил отладить поризводственные процессы до автоматизма и потому гарантируем скорость монтажа, надежность и долговечность изделий
+																	// /.col-lg-4.col-sm-6
+																	.col-lg-4.col-sm-6
+																		.s-why__item
+																			.s-why__img-wrap
+																				img.res-i(src='img/s-why-2.svg' alt='')
+																			.s-why__title
+																				| Материалы
+																			p
+																				| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+																	// /.col-lg-4.col-sm-6
+																	.col-lg-4.col-sm-6
+																		.s-why__item
+																			.s-why__img-wrap
+																				img.res-i(src='img/s-why-3.svg' alt='')
+																			.s-why__title
+																				| Низкие цены
+																			p
+																				| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+																	// /.col-lg-4.col-sm-6
+																	.col-lg-4.col-sm-6
+																		.s-why__item
+																			.s-why__img-wrap
+																				img.res-i(src='img/s-why-4.svg' alt='')
+																			.s-why__title
+																				| Собственное производство
+																			p
+																				| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+																	// /.col-lg-4.col-sm-6
+																	.col-lg-4.col-sm-6
+																		.s-why__item
+																			.s-why__img-wrap
+																				img.res-i(src='img/s-why-5.svg' alt='')
+																			.s-why__title
+																				| Мы близко к Вам
+																			p
+																				| Оказываем комплексные услуги по установке недорогих заборов без материала Заказчика – всё необходимое мы закупаем и привозим сами.
+																	// /.col-lg-4.col-sm-6
+																	.col-lg-4.col-sm-6
+																		.s-why__item
+																			.s-why__img-wrap
+																				img.res-i(src='img/s-why-6.svg' alt='')
+																			.s-why__title
+																				| Мы готовы ставить заборы
+																			p
+																				| 20 км ограждений на складах. Стабильный запас комплектующих и материалов ускоряет процесс отгрузки продукции. 250 машин со стройматериалами отгружается ежедневно
+																	// /.col-lg-4.col-sm-6
+																.s-why__btn-wrap
+																	a.s-why__btn-primary(href='#') Узнать расчитать стоимость
+														// end s-why
+														// start s-project
+														#s-project.s-project.section.bg-light
+															.container
+																.section-title.text-center
+																	h2 Наши выполненные работы с отзывами
+																.row
+																	.s-project__col.col-lg-4.col-sm-6
+																		.s-project__item
+																			a.s-project__img-wrap.img-bg(href='#' style='background-image: url(img/project-1.jpg);')
+																				img(src='img/project-1.jpg' alt='')
+																			p Название работы в одну стрроку
+																			p
+																				| Заказчик:  
+																				strong Юлия г. Подольск
+																	// +e.col.col-lg-4.col-sm-6
+																	.s-project__col.col-lg-4.col-sm-6
+																		.s-project__item
+																			a.s-project__img-wrap.img-bg(href='#' style='background-image: url(img/project-2.jpg);')
+																				img(src='img/project-2.jpg' alt='')
+																			p Название работы в одну стрроку
+																			p
+																				| Заказчик:  
+																				strong Юлия г. Подольск
+																	// +e.col.col-lg-4.col-sm-6
+																	.s-project__col.col-lg-4.col-sm-6
+																		.s-project__item
+																			a.s-project__img-wrap.img-bg(href='#' style='background-image: url(img/project-3.jpg);')
+																				img(src='img/project-3.jpg' alt='')
+																			p Название работы в одну стрроку
+																			p
+																				| Заказчик:  
+																				strong Юлия г. Подольск
+																	// +e.col.col-lg-4.col-sm-6
+																	.s-project__col.col-lg-4.col-sm-6
+																		.s-project__item
+																			a.s-project__img-wrap.img-bg(href='#' style='background-image: url(img/project-4.jpg);')
+																				img(src='img/project-4.jpg' alt='')
+																			p Название работы в одну стрроку
+																			p
+																				| Заказчик:  
+																				strong Юлия г. Подольск
+																	// +e.col.col-lg-4.col-sm-6
+																	.s-project__col.col-lg-4.col-sm-6
+																		.s-project__item
+																			a.s-project__img-wrap.img-bg(href='#' style='background-image: url(img/project-5.jpg);')
+																				img(src='img/project-5.jpg' alt='')
+																			p Название работы в одну стрроку
+																			p
+																				| Заказчик:  
+																				strong Юлия г. Подольск
+																	// +e.col.col-lg-4.col-sm-6
+																	.s-project__col.col-lg-4.col-sm-6
+																		.s-project__item
+																			a.s-project__img-wrap.img-bg(href='#' style='background-image: url(img/project-6.jpg);')
+																				img(src='img/project-6.jpg' alt='')
+																			p Название работы в одну стрроку
+																			p
+																				| Заказчик:  
+																				strong Юлия г. Подольск
+																	// +e.col.col-lg-4.col-sm-6
+																.s-project__btn-wrap
+																	a.s-project__btn(href='#') Работы сезонов 2006-2018
+																	a.s-project__btn(href='#') Работы сезона 2019
+														// end s-project
+														// start s-form
+														section#s-form.s-form.section
+															.container
+																.section-title
+																	.h2.mw-100
+																		| Рассчитайте стоимость
+																		br
+																		span.fw-400 на сайте или уточните у нашего менеджера
+																.s-form__inner.s-form__inner--base
+																	.row
+																		.s-form__col.col-lg-auto
+																			.s-form__left-block
+																				.row
+																					.col-lg-12.col
+																						.h2 Воспользуйтесь калькулятором
+																						a.s-form__btn(href='#') Рассчитать стоимость на калькуляторе
+																					.col-lg-12.col-auto.d-none.d-sm-block
+																						img.res-i(src='img/mobile.png' alt='')
+																		.s-form__col.col.order-lg-0.order-first
+																			.form-wrap
+																				.h2 Позвоните по номеру:
+																				div
+																					a.form-wrap__tel(href='tel:+74996595599') +7 499 659 55 99
+																				.h5 или оставьте Ваши данные и мы Вам перезвоним
+																				form
+																					.form-wrap__input-wrap.form-group
+																						input.form-wrap__input.form-control(type='tel' placeholder='+ 7 (xxx) xxx - xx - xx')
+																					// +e.input-wrap
+																					.form-wrap__btn-wrap
+																						button.form-wrap__btn.btn.btn-accent
+																							| Заказать звонок
+																					.form-wrap__polite
+																						label
+																							input(type='checkbox' checked='checked')
+																							| 												я даю согласие на обработку персональных данных
+														// end s-form
+														footer.footer
+															.container
+																.d-none.d-lg-block
+																	ul.menu
+																		li.menu-item
+																			a(href='#') Отзывы
+																		li.menu-item
+																			a(href='#') Фотогалерея
+																		li.menu-item
+																			a(href='#') Наша команда
+																		li.menu-item
+																			a(href='#') Новости
+																		li.menu-item
+																			a(href='#') Вакансии
+																		li.menu-item
+																			a(href='#') Статьи
+																		li.menu-item
+																			a(href='#') Контакты
+																.row
+																	.mb-2.col-md
+																		.footer__copy
+																			| © Доступный забор
+																		div
+																			a.text-white(href='#') Пользовательское соглашение
+																		div
+																			a.text-white(href='#') Карта сайта
+																	.mb-2.col-md
+																		div
+																			a.text-white(href='tel:+7 945 999 88 99') +7 945 999 88 99
+																		div
+																			a.text-white.tdu(href='mailto:info@info.com') info@info.com
+																		div 145689, Московская обл. г. Такой, ул. Такая 36
+																		.soc
+																			a.soc__item(href='' target='_blank')
+																				i.fab.fa-twitter
+																			a.soc__item(href='' target='_blank')
+																				i.fab.fa-instagram
+																			a.soc__item(href='' target='_blank')
+																				i.fab.fa-facebook-f
+																			a.soc__item(href='' target='_blank')
+																				i.fab.fa-youtube
+																	.mb-2.col-md-auto
+																		div ИНН 564689879
+																		div ОГРН 4654654664
+		#modal.form-wrap.zoom-anim-dialog.mfp-hide.modal.modal-win
+			form
+				p.text-center
+					strong
+						| Нужен забор из профнастила   высотой  1,5   м?
+						br
+						| Оставьте Ваш телефон и специалист расскажет Вам все нюансы данного забора.
+				.form-wrap__input-wrap.form-group
+					input.form-wrap__input.form-control(type='Введите свой телефон:' placeholder='tel')
+				// +e.input-wrap
+				.form-wrap__btn-wrap
+					button.form-wrap__btn.btn.btn-lg.btn-accent
+						| Узнать подробнее
+				.form-wrap__polite.text-center
+					label
+						input(type='checkbox' checked='checked')
+						| 						я даю согласие на обработку персональных данных
+		#thanks.zoom-anim-dialog.mfp-hide.modal.modal-win.form-wrap.text-center
+			br
+			h3 Заявка принята
+			br
+			p Скоро с Вами свяжутся
+			br
+		#modal-call.form-wrap.zoom-anim-dialog.mfp-hide.modal-win.modal-form
+			form
+				.text-center
+					.form-wrap__title.h3.ttu
+						| Обратный звонок
+					p Заполните заявку и мы с Вами свяжемся в течении 15 минут
+				.form-wrap__input-wrap.form-group
+					input.form-wrap__input.form-control(type='text' placeholder='Ваше Имя' required='required')
+				// +e.input-wrap
+				.form-wrap__input-wrap.form-group
+					input.form-wrap__input.form-control(type='tel' placeholder='Ваш телефон' required='required')
+				// +e.input-wrap
+				input.form-wrap__btn.btn.btn-block.btn-primary.mb-4(type='submit' value='Перезвоните мне')
+				.form-wrap__polite
+					label
+						input(type='checkbox' checked='checked')
+						| 						я даю согласие на обработку персональных данных
+		// #modal-call
+		#modal-info.zoom-anim-dialog.mfp-hide.modal-win.modal-form.modal-win--lg
+			.row
+				.col-xl-3.col-lg-4
+					.btn-qu
+						| ?
+					.h4.strong Типы покрытия
+				.col
+					table.table
+						thead
+							tr
+								td  
+								td Лицевая сторона
+								td Внутренняя сторона
+						tbody
+							tr
+								td Одностороннее покрытие
+								td(data-title='Лицевая сторона')
+									img(src='img/modal-1.jpg' alt='')
+								td(data-title='Внутренняя сторона')
+									img(src='img/modal-2.jpg' alt='')
+							tr
+								td Двухстороннее покрытие
+								td(data-title='Лицевая сторона')
+									img(src='img/modal-1.jpg' alt='')
+								td(data-title='Внутренняя сторона')
+									img(src='img/modal-2.jpg' alt='')
+							tr
+								td Оцинкованное покрытие
+								td(data-title='Лицевая сторона')
+									img(src='img/modal-1.jpg' alt='')
+								td(data-title='Внутренняя сторона')
+									img(src='img/modal-2.jpg' alt='')
+		// #modal-call
+		// modal
+		script(src='js/jquery.min.js')
+		script(src='libs/magnificPopup/jquery.magnific-popup.min.js')
+		script(src='libs/slick/slick.min.js')
+		script(src='libs/svg4everybody-master/svg4everybody.min.js')
+		script(src='libs/jquery.touchSwipe.min.js')
+		script(src='libs/sticky-kit.js')
+		script(src='libs/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.js')
+		script(src='libs/jquery.mask.min.js')
+		script(src='js/common.js')
