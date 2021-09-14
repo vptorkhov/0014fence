@@ -117,7 +117,7 @@
 			transition-duration: 0.4s;
 			font-size: 16px;
 			line-height: 15px;
-			color: rgba(0, 0, 0, 0.7) !important;
+			color: rgba(0, 0, 0, 0.7);
 			border: 1px solid #cc6666;
 			padding-top: 12px;
 			padding-bottom: 12px;
@@ -131,7 +131,8 @@
 				margin-top: 5px;
 			}
 			&:hover {
-				background-color: #fafafa;
+				background-color: #d41c1c;
+				color:#ffffff;
 			}
 		}
 		&-contacts {
@@ -195,7 +196,7 @@
 	}
 }
 .top-nav {
-	background-color: #fafafa;
+	background-color: #eeeeee;
 	li {
 		&::before {
 			content: none !important;

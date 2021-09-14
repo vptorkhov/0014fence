@@ -108,7 +108,7 @@
           transition-duration: 0.4s;
   font-size: 16px;
   line-height: 15px;
-  color: rgba(0, 0, 0, 0.7) !important;
+  color: rgba(0, 0, 0, 0.7);
   border: 1px solid #cc6666;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -123,7 +123,8 @@
   margin-top: 5px;
 }
 .top-line__tel-btn:hover {
-  background-color: #fafafa;
+  background-color: #d41c1c;
+  color: #ffffff;
 }
 .top-line__tel-contacts {
   padding-left: 10px;
@@ -193,7 +194,7 @@
 }
 
 .top-nav {
-  background-color: #fafafa;
+  background-color: #eeeeee;
 }
 .top-nav li::before {
   content: none !important;
